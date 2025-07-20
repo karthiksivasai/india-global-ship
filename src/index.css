@@ -114,5 +114,25 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Enhanced spacing and typography */
+  .section-spacing {
+    @apply py-20 lg:py-24;
+  }
+  
+  .container-spacing {
+    @apply px-6 lg:px-8;
+  }
+  
+  .card-spacing {
+    @apply p-8 lg:p-10;
+  }
+  
+  .text-enhanced {
+    @apply text-base lg:text-lg leading-relaxed;
   }
 }

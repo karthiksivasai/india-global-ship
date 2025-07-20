@@ -23,6 +23,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import WhatsAppFloat from "@/components/ui/whatsapp-float";
 
 const Index = () => {
   const [trackingNumber, setTrackingNumber] = useState("");
@@ -67,31 +68,31 @@ const Index = () => {
   const services = [
     {
       icon: Utensils,
-      title: "Food & Pickles",
-      description: "Homemade pickles, snacks & traditional foods",
+      title: "Pickle Packing",
+      description: "Homemade pickles, spices & traditional Indian foods shipped safely",
       popular: true,
-      discount: "30% off to USA"
+      discount: "20% off food shipments to USA"
     },
     {
       icon: ShirtIcon,
-      title: "Clothing & Apparel",
-      description: "Traditional wear, winter clothing & textiles",
+      title: "Clothing",
+      description: "Traditional wear, sarees, winter clothes & textiles",
       popular: false,
       discount: null
     },
     {
       icon: FileText,
-      title: "Documents",
-      description: "Fast & secure document delivery worldwide",
-      popular: false,
-      discount: null
+      title: "Food Items",
+      description: "Snacks, dry fruits, sweets & homemade delicacies",
+      popular: true,
+      discount: "Special food rates"
     },
     {
       icon: Gift,
-      title: "Gifts & Hampers",
-      description: "Festival gifts & special occasion packages",
-      popular: true,
-      discount: "Festival rates"
+      title: "Medicines",
+      description: "Prescription medicines & health supplements (legal items only)",
+      popular: false,
+      discount: null
     }
   ];
 
@@ -128,15 +129,17 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-white space-y-6 animate-fade-in">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Connect India
+                  Ship Pickles, Clothes, and Medicines
                   <br />
-                  <span className="text-primary-light">to the World</span>
+                  <span className="text-primary-light">from India to the USA, Fast and Secure!</span>
                 </h1>
-                <p className="text-xl text-white/90 leading-relaxed">
-                  Send your love across borders with India's most trusted international 
-                  courier service. From homemade pickles to important documents - 
-                  we deliver what matters most.
+                <p className="text-xl text-white/90 leading-relaxed mb-4">
+                  Special Discounts on Food Items | Trusted by 10,000+ Customers
                 </p>
+                <div className="flex items-center gap-2 text-accent font-semibold">
+                  <Star className="h-5 w-5 fill-current" />
+                  <span>Rated ★★★★★ by Indian customers across 5 cities</span>
+                </div>
                 
                 {/* Quick Track */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
@@ -160,12 +163,18 @@ const Index = () => {
                   <Button variant="secondary" size="xl" asChild>
                     <Link to="/services">
                       <Package className="h-5 w-5 mr-2" />
-                      Explore Services
+                      Get Started
+                    </Link>
+                  </Button>
+                  <Button variant="outline" size="xl" className="bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary" asChild>
+                    <Link to="/tracking">
+                      Track Now
+                      <ArrowRight className="h-4 w-4 ml-2" />
                     </Link>
                   </Button>
                   <Button variant="outline" size="xl" className="bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary" asChild>
                     <Link to="/contact">
-                      Get Free Quote
+                      Book Pickup
                       <ArrowRight className="h-4 w-4 ml-2" />
                     </Link>
                   </Button>
@@ -373,6 +382,7 @@ const Index = () => {
       </main>
 
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };

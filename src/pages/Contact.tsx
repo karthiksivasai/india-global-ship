@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock, MessageSquare } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import WhatsAppFloat from "@/components/ui/whatsapp-float";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -254,7 +255,9 @@ const Contact = () => {
                   <div className="flex items-start gap-2">
                     <MapPin className="h-4 w-4 text-muted-foreground mt-0.5 flex-shrink-0" />
                     <p className="text-sm text-muted-foreground">
-                      [Kondapur Address Placeholder]
+                      Plot No. 123, Kondapur Main Road<br/>
+                      Near Metro Station, Kondapur<br/>
+                      Hyderabad - 500084, Telangana
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
@@ -271,7 +274,7 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <MapPin className="h-5 w-5 text-primary" />
-                    Nagul Branch
+                    Nagole Branch
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
@@ -383,6 +386,7 @@ const Contact = () => {
       </main>
 
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };

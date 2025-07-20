@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Package, Plane, Clock, Shield, Utensils, Heart, FileText, ShirtIcon, PillIcon, Gift } from "lucide-react";
+import WhatsAppFloat from "@/components/ui/whatsapp-float";
 
 const Services = () => {
   const destinations = [
@@ -178,6 +179,7 @@ const Services = () => {
       </main>
 
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };
