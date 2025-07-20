@@ -2,32 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Vamshi International Couriers Design System - Bright, trustworthy, Indian aesthetic */
+/* Courier Website Design System - Professional, trustworthy, global shipping focused */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 225 100% 15%; /* Navy blue text */
+    --foreground: 210 24% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 225 100% 15%;
+    --card-foreground: 210 24% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 225 100% 15%;
+    --popover-foreground: 210 24% 16%;
 
-    /* Bright Yellow Primary - Vamshi brand color */
-    --primary: 56 100% 62%; /* Bright yellow #FFEB3B equivalent */
-    --primary-foreground: 225 100% 15%; /* Navy text on yellow */
-    --primary-light: 56 100% 70%;
-    --primary-dark: 56 100% 50%;
+    /* Courier Blue - Professional and trustworthy */
+    --primary: 214 85% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 85% 45%;
     
-    /* Royal Blue Accent - Secondary brand color */
-    --secondary: 231 100% 45%; /* Royal blue */
-    --secondary-foreground: 0 0% 100%;
+    /* Trust Gray - Secondary elements */
+    --secondary: 210 17% 93%;
+    --secondary-foreground: 210 24% 16%;
 
-    /* Indian-friendly backgrounds */
-    --muted: 56 20% 96%; /* Very light yellow tint */
-    --muted-foreground: 225 50% 35%;
+    /* Subtle backgrounds */
+    --muted: 210 17% 96%;
+    --muted-foreground: 210 16% 46%;
 
     /* Success Green for delivery status */
     --accent: 142 71% 45%;
@@ -37,23 +36,20 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     --warning: 38 92% 50%;
-    --warning-foreground: 225 100% 15%;
+    --warning-foreground: 0 0% 100%;
 
-    --border: 56 30% 85%;
-    --input: 56 30% 92%;
-    --ring: 231 100% 45%; /* Royal blue focus ring */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 85% 35%;
 
-    --radius: 0.875rem; /* Slightly larger radius for Indian aesthetic */
+    --radius: 0.75rem;
 
-    /* Vamshi-specific design tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(56 100% 62%), hsl(231 100% 45%)); /* Yellow to royal blue */
-    --gradient-service: linear-gradient(180deg, hsl(0 0% 100%), hsl(56 20% 98%));
-    --gradient-trust: linear-gradient(135deg, hsl(231 100% 45%), hsl(225 100% 25%)); /* Royal to navy */
-    --shadow-card: 0 6px 32px -8px hsl(56 100% 62% / 0.15);
-    --shadow-feature: 0 12px 48px -16px hsl(231 100% 45% / 0.20);
-    --shadow-warm: 0 8px 40px -12px hsl(56 100% 62% / 0.25);
+    /* Courier-specific design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(214 85% 35%), hsl(214 85% 45%));
+    --gradient-service: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 17% 98%));
+    --shadow-card: 0 4px 24px -6px hsl(214 85% 35% / 0.12);
+    --shadow-feature: 0 8px 40px -12px hsl(214 85% 35% / 0.18);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
