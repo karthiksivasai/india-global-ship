@@ -2,41 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Courier Website Design System - Professional, trustworthy, global shipping focused */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 24% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 24% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 24% 16%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Courier Blue - Professional and trustworthy */
+    --primary: 214 85% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 85% 45%;
+    
+    /* Trust Gray - Secondary elements */
+    --secondary: 210 17% 93%;
+    --secondary-foreground: 210 24% 16%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Subtle backgrounds */
+    --muted: 210 17% 96%;
+    --muted-foreground: 210 16% 46%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Success Green for delivery status */
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Warning/Alert colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 85% 35%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --radius: 0.75rem;
 
-    --radius: 0.5rem;
+    /* Courier-specific design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(214 85% 35%), hsl(214 85% 45%));
+    --gradient-service: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 17% 98%));
+    --shadow-card: 0 4px 24px -6px hsl(214 85% 35% / 0.12);
+    --shadow-feature: 0 8px 40px -12px hsl(214 85% 35% / 0.18);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
