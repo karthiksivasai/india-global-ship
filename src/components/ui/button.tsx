@@ -9,18 +9,19 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary-light hover:shadow-lg transform hover:-translate-y-0.5",
+        default: "bg-primary text-primary-foreground hover:bg-primary-light hover:shadow-warm transform hover:-translate-y-0.5 font-semibold",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-primary text-primary bg-background hover:bg-primary hover:text-primary-foreground hover:shadow-card",
+          "border-2 border-secondary text-secondary bg-background hover:bg-secondary hover:text-secondary-foreground hover:shadow-feature transition-all duration-300",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-hero text-primary-foreground hover:shadow-feature transform hover:-translate-y-1 font-semibold",
-        track: "bg-accent text-accent-foreground hover:bg-accent/90 font-semibold hover:shadow-lg",
-        service: "bg-background border border-border text-foreground hover:border-primary hover:shadow-card transform hover:-translate-y-0.5",
+          "bg-secondary text-secondary-foreground hover:bg-gradient-trust hover:shadow-feature transform hover:-translate-y-0.5 font-semibold",
+        ghost: "hover:bg-muted hover:text-foreground",
+        link: "text-secondary underline-offset-4 hover:underline font-medium",
+        hero: "bg-gradient-hero text-primary-foreground hover:shadow-feature transform hover:-translate-y-1 font-bold text-lg shadow-warm",
+        track: "bg-accent text-accent-foreground hover:bg-accent/90 font-semibold hover:shadow-lg transform hover:-translate-y-0.5",
+        service: "bg-background border-2 border-border text-foreground hover:border-secondary hover:shadow-card transform hover:-translate-y-0.5 hover:bg-muted",
+        indian: "bg-gradient-trust text-secondary-foreground hover:shadow-warm transform hover:-translate-y-1 font-bold border-2 border-secondary",
       },
       size: {
         default: "h-10 px-4 py-2",

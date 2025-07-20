@@ -22,11 +22,11 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 font-bold text-xl text-foreground hover:text-primary transition-colors">
-            <Package className="h-8 w-8 text-primary" />
-            <span>Swift Global</span>
+          <Link to="/" className="flex items-center space-x-3 font-bold text-xl text-foreground hover:text-secondary transition-colors">
+            <Package className="h-10 w-10 text-secondary" />
+            <span className="text-secondary">Vamshi International</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -35,10 +35,10 @@ export const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-semibold transition-colors hover:text-secondary ${
                   isActive(item.href) 
-                    ? "text-primary border-b-2 border-primary pb-1" 
-                    : "text-muted-foreground"
+                    ? "text-secondary border-b-2 border-secondary pb-1" 
+                    : "text-foreground"
                 }`}
               >
                 {item.name}
@@ -69,19 +69,19 @@ export const Header = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col space-y-4 mt-6">
-                <Link to="/" className="flex items-center space-x-2 font-bold text-xl text-foreground mb-6">
-                  <Package className="h-8 w-8 text-primary" />
-                  <span>Swift Global</span>
+                <Link to="/" className="flex items-center space-x-3 font-bold text-xl text-foreground mb-6">
+                  <Package className="h-10 w-10 text-secondary" />
+                  <span className="text-secondary">Vamshi International</span>
                 </Link>
                 
                 {navItems.map((item) => (
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`text-sm font-medium py-2 px-3 rounded-md transition-colors ${
+                    className={`text-sm font-semibold py-3 px-4 rounded-lg transition-colors ${
                       isActive(item.href)
-                        ? "bg-primary text-primary-foreground"
-                        : "text-foreground hover:bg-muted"
+                        ? "bg-secondary text-secondary-foreground shadow-feature"
+                        : "text-foreground hover:bg-muted hover:text-secondary"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
