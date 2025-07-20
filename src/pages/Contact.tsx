@@ -228,6 +228,143 @@ const Contact = () => {
           </div>
         </section>
 
+        {/* Our Branches */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+                Our Branches
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                We serve you from multiple locations across India. Visit any of our branches 
+                for personalized courier services and support.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Kondapur Branch */}
+              <Card className="shadow-card hover:shadow-feature transition-shadow duration-300">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Kondapur Branch
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <MapPin className="h-4 w-4 text-muted-foreground mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">
+                      [Kondapur Address Placeholder]
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                    <p className="text-sm font-semibold text-foreground">
+                      +91-9876543210
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Nagul Branch */}
+              <Card className="shadow-card hover:shadow-feature transition-shadow duration-300">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Nagul Branch
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <MapPin className="h-4 w-4 text-muted-foreground mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">
+                      [Nagul Address Placeholder]
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                    <p className="text-sm font-semibold text-foreground">
+                      +91-9876543211
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Vijayawada Branch */}
+              <Card className="shadow-card hover:shadow-feature transition-shadow duration-300">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Vijayawada Branch
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <MapPin className="h-4 w-4 text-muted-foreground mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">
+                      [Vijayawada Address Placeholder]
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                    <p className="text-sm font-semibold text-foreground">
+                      +91-9876543212
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Guntur Branch */}
+              <Card className="shadow-card hover:shadow-feature transition-shadow duration-300">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Guntur Branch
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <MapPin className="h-4 w-4 text-muted-foreground mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">
+                      [Guntur Address Placeholder]
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                    <p className="text-sm font-semibold text-foreground">
+                      +91-9876543213
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Bangalore Branch */}
+              <Card className="shadow-card hover:shadow-feature transition-shadow duration-300">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Bangalore Branch
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <MapPin className="h-4 w-4 text-muted-foreground mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">
+                      [Bangalore Address Placeholder]
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                    <p className="text-sm font-semibold text-foreground">
+                      +91-9876543214
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* Emergency Contact */}
         <section className="py-12 bg-muted/50">
           <div className="container mx-auto px-4">
