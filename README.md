@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+Vamshi International Courier Services – Web Portal
 
-## Project info
+A modern, user-friendly website built for Vamshi International Courier Services to showcase their global logistics offerings and provide real-time tracking capabilities.
 
-**URL**: https://lovable.dev/projects/2eddd21f-6022-48d0-8fdf-46d10638a67d
+⸻
 
-## How can I edit this code?
+Key Features
+	•	Responsive Design for seamless browsing on mobile, tablet, and desktop
+	•	Service Listings detailing shipping options (e.g., food, medicines, documents)
+	•	Live Shipment Tracking using AWB codes for real-time status updates
+	•	Quick Quotes & Contact Forms for effortless customer inquiries
+	•	SEO Optimization to enhance visibility across search engines
 
-There are several ways of editing your application.
+⸻
 
-**Use Lovable**
+Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2eddd21f-6022-48d0-8fdf-46d10638a67d) and start prompting.
+Layer	Technology
+Frontend	React, TailwindCSS
+Backend	Node.js, Express.js
+Tracking	REST API for AWB status
+Hosting	Vercel (frontend), Heroku/Node host (backend)
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+⸻
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+├── src/
+│   ├── components/        # Reusable UI parts (Header, Footer, Tracking Form)
+│   ├── pages/
+│   │   ├── Home.js
+│   │   └── Track.js
+│   ├── styles/             # Centralized Tailwind styles config
+│   └── App.js
+├── backend/
+│   ├── routes/             # REST endpoints (e.g., GET /api/track/:awb)
+│   ├── controllers/        # Business logic for tracking queries
+│   ├── models/             # Data schema (if using DB)
+│   └── server.js
+├── public/                 # Static assets, favicon, Open Graph previews
+├── .env.example            # Environment variables (e.g., API keys)
+├── package.json
+└── README.md
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+⸻
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Installation & Setup
+	1.	Clone the repo:
 
-# Step 3: Install the necessary dependencies.
-npm i
+git clone https://github.com/your-username/vamshi-courier-website.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+
+	2.	Navigate into the project folder:
+
+cd vamshi-courier-website
+
+
+	3.	Install dependencies:
+
+npm install
+cd backend && npm install
+
+
+	4.	Configure environment variables in both frontend and backend (e.g., API keys, ports).
+	5.	Run the application:
+
+# In one terminal (frontend)
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+# In another (backend)
+cd backend && npm start
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+	6.	Visit http://localhost:3000 (or your configured host) to view the website.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+⸻
 
-This project is built with:
+Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Contributions are welcome! Feel free to:
+	•	Fork the repo
+	•	Create a feature branch (e.g., feature/add-auth)
+	•	Submit a pull request for review
 
-## How can I deploy this project?
+⸻
 
-Simply open [Lovable](https://lovable.dev/projects/2eddd21f-6022-48d0-8fdf-46d10638a67d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Website: https://vamshicouriers.com/
